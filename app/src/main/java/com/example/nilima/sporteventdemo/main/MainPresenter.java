@@ -21,10 +21,18 @@ public class MainPresenter implements MainContract.Presenter
     public MainPresenter(Context context, MainContract.View view) {
         this.view = view;
         this.context = context;
-        this.appController = (AppController) ((MainActivity) context).getApplication();
     }
 
 
+    @Override
+    public void onstart() {
+
+    }
+
+    @Override
+    public void ontitleClick() {
+
+    }
 
     @Override
     public void onActivityStopped() {

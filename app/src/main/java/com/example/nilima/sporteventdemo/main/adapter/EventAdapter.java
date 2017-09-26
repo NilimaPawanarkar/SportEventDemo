@@ -18,6 +18,9 @@ import java.util.List;
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder> {
 
     private List<Event> eventList;
+    public EventAdapter(List<Event> bookList){
+        this.eventList=bookList;
+    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
@@ -29,10 +32,6 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
             date=(TextView) view.findViewById(R.id.edate);
 
         }
-    }
-
-    public EventAdapter(List<Event> bookList){
-        this.eventList=eventList;
     }
 
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
